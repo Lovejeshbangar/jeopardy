@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+html 
+{
+    background-image: linear-gradient(to left bottom, #296ae3, #4962de, #5f59d8, #714fd1, #8043c8, #8f3cc1, #9b34b8, #a62cb0, #b22ba7, #bd2b9f, #c52e97, #cc338f);
+    background-repeat: no-repeat;
+
+}
+body
+{
+  
+    margin: 0 auto;
+    padding: 20px 15px;
+   
+    align-content: center;
+    height: 100%;
+
+}
+img{
+    display:block;
+    margin-left: 100px;
+
+    width:70%;
+    transition:0.4s;
+}
+img:hover{
+    width: 74%;
+    transition:0.4s;
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    grid-template-areas: 'box1 box2 '
+                         'box3 box4 '
+                         'box5 box6 ';
+                         
+                        }
+.grid div{
+    
+    width: max-content;
+   word-wrap: break-word;width:400px;
+    font-size: 26px;
+    font-family: sans-serif;
+    text-align: center;
+    padding:0 30px 0 30px;
+    /* border: 1px solid black; */
+
+}
+form
+{
+   width:fit-content;
+    margin: 200px 300px 255px 300px;
+   
+}
+input:not(.action){
+    list-style: inherit;
+    
+}
+label
+{
+    font-family: 'Satisfy';
+}
+
+.action input {
+    background-color: rgb(194, 64, 12);
+    color: white;
+    padding: 12px 20px;
+    
+    border: none;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ques span
+{
+    margin-left: 200px;
+    font-family: 'Dancing script';
+    font-weight: bold;
+    text-align:center;
+    
+    font-size:1.6em;
+}
+.cat span
+{
+	 margin-left: 200px;
+    font-family: 'Dancing script';
+    font-weight: bold;
+    text-align:center;
+    
+    font-size:1.2em;
+	
+}
+#box1
+{
+    grid-area: box1;
+}
+#box2
+{
+    grid-area: box2;
+}
+#box3
+{
+    grid-area:box3;
+}
+#box4
+{
+    grid-area: box4;
+}
+#box5
+{
+    grid-area: box5;
+}
+#box6
+{
+    grid-area: box6;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/css/quiz.css"
+        th:href="@{css/quiz.css}">
+        <title>quiz</title>
+        <script type="text/javascript" src="../static/jscript/process.js"
+        th:src="@{jscript/process.js}"></script>
+    </head>
+    <body>
+       
+            <form action="answer" method="get">
+                    <img src="../static/images/jeopardy-logo-png-1.png"
+                    th:src="@{images/jeopardy-logo-png-1.png}">
+               <div class="ques"><span th:text="${session.questions.question}">What is vin diesels name in 'The Pacifier'?</span></div> 
+                <br>
+                <div class="ques"><span th:text="${session.questions.category}   "></span>
+              
+                <span th:text="   ${session.questions.value}"></span></div> 
+                <br>
+                <div class=grid>
+               <div class="option" id="box1"> <input type="radio" name="choice" th:value="${session.questions.answer1}">
+                <span th:text="${session.questions.answer1}">nbn</span></div>
+                <div class="option" id="box2"><input type="radio" name="choice" th:value="${session.questions.answer2}" checked>
+                        <span th:text="${session.questions.answer2}">kaulder</span></div>
+                <div class="option" id="box3"><input type="radio" name="choice" th:value="${session.questions.answer3}">
+                <span th:text="${session.questions.answer3}">Vin Diesel</span></div
+                >
+                <div class="option" id="box4"><input type="radio" name="choice" th:value="${session.questions.answer4}">
+                <span th:text="${session.questions.answer4}">Shane Wolf </span></div>
+                <div class="action" id="box6"> <input type="submit" value="Submit Answer"></div>
+                    <div class="action" id="box5"> <input type="submit" value="quit" formaction="quit" ></div>
+                </div>
+
+
+            </form>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    
+    <title>Categories</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{css/style.css}">
+ <script type="text/javascript" src="../static/jscript/process.js" th:src="@{jscript/process.js}"></script>
+ 
+   
+</head>
+<body >
+    
+
+    
+    <header>
+        <div id="top">
+      
+            
+        <div id="tagline">
+            <h1 th:text="'WELCOME '+${session.contestant.PlayerName}"></h1>
+            <h1 th:text="'WINNINGS = $'+${session.contestant.Score}"></h1>
+            <br>
+            <h2 th:text ="${session.answer}">    
+            </h2>
+        </div>
+       
+
+        </div>
+        
+    </header>
+	<form>
+    <table>
+       
+        <tr>
+            <th class="categories"><p>Cars</p></div></div></th>
+            
+            <th class="categories"><p>Movies</p></th>
+            <th class="categories"><p>Science</p></th>
+            <th class="categories"><p>Sports</p></th>
+            <th class="categories"><p>Politics</p></th>
+
+        </tr>
+        <tr>
+         
+            <th> <form action="pickQuestion" >
+            <div class="button_container">
+			<input type="hidden" name="category"  value="cars" />
+			<input type="hidden" name="value"  value="100" />
+			
+			<input type="SUBMIT" value="100" class="btn" formaction="pickQuestion" />
+			</div>
+			</form></th>
+            <th> <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="movies" />
+			<input type="hidden" name="value"  value="100" />
+			<input type="SUBMIT" value="100"/>
+			</form></th>
+            <th> <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="science" />
+			<input type="hidden" name="value"  value="100" />
+			<input type="SUBMIT" value="100"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="sport" />
+			<input type="hidden" name="value"  value="100" />
+			<input type="SUBMIT" value="100"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="politics" />
+			<input type="hidden" name="value"  value="100" />
+			<input type="SUBMIT" value="100"/>
+			</form> </th>
+
+        </tr>
+        <tr>
+                                 
+            <th> 
+			 <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="Cars" />
+			<input type="hidden" name="value"  value="200" />
+			<input type="SUBMIT" value="200"/>
+			</form>
+			 </th>
+            <th> <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="movies" />
+			<input type="hidden" name="value"  value="200" />
+			<input type="SUBMIT" value="200"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="science" />
+			<input type="hidden" name="value"  value="200" />
+			<input type="SUBMIT" value="200"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="sport" />
+			<input type="hidden" name="value"  value="200" />
+			<input type="SUBMIT" value="200"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="politics" />
+			<input type="hidden" name="value"  value="200" />
+			<input type="SUBMIT" value="200"/>
+			</form>  </th>
+
+        </tr>
+        <tr>
+            
+            <th> <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="Cars" />
+			<input type="hidden" name="value"  value="300" />
+			<input type="SUBMIT" value="300"/>
+			</form></th>
+            <th> <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="movies" />
+			<input type="hidden" name="value"  value="300" />
+			<input type="SUBMIT" value="300"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="science" />
+			<input type="hidden" name="value"  value="300" />
+			<input type="SUBMIT" value="300"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="sport" />
+			<input type="hidden" name="value"  value="300" />
+			<input type="SUBMIT" value="300"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="politics" />
+			<input type="hidden" name="value"  value="300" />
+			<input type="SUBMIT" value="300"/>
+			</form>  </th>
+
+        </tr>
+        <tr>
+            
+            <th> <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="Cars" />
+			<input type="hidden" name="value"  value="400" />
+			<input type="SUBMIT" value="400"/>
+			</form></th>
+            <th> <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="movies" />
+			<input type="hidden" name="value"  value="400" />
+			<input type="SUBMIT" value="400"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="science" />
+			<input type="hidden" name="value"  value="400" />
+			<input type="SUBMIT" value="400"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="sport" />
+			<input type="hidden" name="value"  value="400" />
+			<input type="SUBMIT" value="400"/>
+			</form></th>
+            <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="politics" />
+			<input type="hidden" name="value"  value="400" />
+			<input type="SUBMIT" value="400"/>
+			</form> </th>
+
+        </tr>
+        <tr>
+            
+                <th> <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="Cars" />
+			<input type="hidden" name="value"  value="500" />
+			<input type="SUBMIT" value="500"/>
+			</form></th>
+                <th> <form action="pickQuestion" >
+			<input type="hidden" name="category"  value="movies" />
+			<input type="hidden" name="value"  value="500" />
+			<input type="SUBMIT" value="500"/>
+			</form></th>
+                <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="science" />
+			<input type="hidden" name="value"  value="500" />
+			<input type="SUBMIT" value="500"/>
+			</form></th>
+                <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="sports" />
+			<input type="hidden" name="value"  value="500" />
+			<input type="SUBMIT" value="500"/>
+			</form></th>
+                <th><form action="pickQuestion" >
+			<input type="hidden" name="category"  value="politics" />
+			<input type="hidden" name="value"  value="500" />
+			<input type="SUBMIT" value="500"/>
+			</form> </th>
+    
+            </tr>
+       
+
+    </table>    
+</form>
+</body>
+</html>

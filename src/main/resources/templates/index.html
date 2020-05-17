@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+            <title>Start</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/mainstyle.css"
+        th:href="@{css/mainstyle.css}">
+        <script type="text/javascript" src="../static/jscript/process.js"
+        th:src="@{jscript/process.js}"></script>
+    </head>
+    <body>
+    <div class="grow pic">
+        <img src="../static/images/jeop.png"
+        th:src="@{images/jeop.png}">
+        </div>
+        <form action="categories" method="get">
+
+
+       <label>Please enter your Name</label>
+        
+        <input type="text" id="name" name="name">
+        
+        <br>
+        <div class="button">
+        <input type="submit" class="myButton" value="Enter The game"/>  
+        </div>    
+    </form>
+    </body>
+</html>
